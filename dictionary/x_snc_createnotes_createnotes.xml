@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="406a674083fa161067577f29feaad3d5" label="CreateNotes" max_length="40" name="x_snc_createnotes_createnotes" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Title" max_length="40" name="title" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Note" max_length="255" name="note" type="string_full_utf8"/>
+        <element attributes="encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>
